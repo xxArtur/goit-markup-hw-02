@@ -39,7 +39,7 @@
   /* навигація */
   
   .site-nav .link {
-  color: var(--accent-color);
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -47,6 +47,14 @@
   text-decoration: none;
   }
   
+  .site-nav .link-now{
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  }
   
   /* герой */
   
