@@ -18,7 +18,29 @@
     list-style-type: none;
   }
   
-  .links {
+.container {
+  /* margin-left: auto;
+  margin-right: auto;  take=*/
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  outline: 2px solid tomato;
+  /* background-color: tomato; */
+}
+
+
+.section {
+  padding:90px 0;
+  
+}
+
+
+/* .heder-section {
+    background-color: rgb(90, 83, 82);
+} */
+
+
+.links {
     text-decoration: none;
   
    } 
@@ -41,17 +63,25 @@
 
 
   /* навигація */
-  
-  .site-nav .link {
+
+  .nav-list {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .site-nav .nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display:inline-block;
+    /* box-sizing: border-box; */
   }
   
-  .site-nav .link-now{
+
+  .site-nav .now{
     color:  var(--accent-color);
     font-weight: 500;
     font-size: 14px;
@@ -60,24 +90,43 @@
     text-decoration: none;
   }
   
+  .nav-link {
+    display: inline-block;
+    margin-right: 40px;
+  }
 
   /* герой */
   .hero {
+    /* background-image: url(../images/borders.jpg); */
     background-color: var(--background-color-wan);
     background-size: 1600px 600px;
+    padding: 200px 0 280px 30px;
+    /* background: center; */
+  
   }
 
+/* .heder-section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block; */
+
   .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    max-width: 696px ;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   
   .button {
+    
     border-radius: 3px;
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
@@ -87,10 +136,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
+    display: inline-block;
+    padding: 11px 34px;
+    min-width: 130px;
+    text-align: center;
   }
     
   .button.primary-top {
-    color: var(--primary-white-color);
+    margin: 0 auto;
+    display:block;
+      color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color:var(--accent-color);
   }
@@ -127,8 +183,10 @@
   .list {
     font-size: 24px;
     font-weight: 400;
-    text-decoration: none;
-    list-style: none;
+    /* text-decoration: none;
+    list-style: none; */
+    /* box-sizing:border-box;
+    margin: 0%; */
   }
   
   
